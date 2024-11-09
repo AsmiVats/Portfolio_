@@ -1,3 +1,4 @@
+// tailwind.config.js
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,8 +13,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        degular: ["'Degular Display'", "sans-serif"],
+        ivypresto: ["'IvyPresto Display'", "serif"],
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
