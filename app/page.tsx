@@ -1,6 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import Header from "./pages/Header";
+import './globals.css';
+
+
+import Navbar from "./pages/Navbar";
+import {ProjectSection} from "./pages/projects/ProjectSection";
 
 export default async function Home() {
 
@@ -9,6 +13,7 @@ export default async function Home() {
     <div>
       <Navbar/>
       <Header/>
+      <ProjectSection/>
     </div>
   );
 }

@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+// import { Manrope } from '@next/font/google';
+
+// const degular = Manrope({
+//   weight: ['400', '700'],
+//   subsets: ['latin'],
+// });
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

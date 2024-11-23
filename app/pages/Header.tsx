@@ -1,10 +1,10 @@
-import React from 'react';
+import title from '../assets/title.svg';
 
 function Header() {
   return (
     <div className="bg-[#4c6ee2] h-screen w-full flex flex-col justify-center items-center">
       <div className="font-extrabold text-pretty text-center text-[#ffffff] text-9xl mb-10">
-        Hello!
+        {/* <img src='/title.svg' alt="Title" /> */}
       </div>
       <div className="text-center mt-10">
         <span className="text-white text-4xl font-medium font-degular">
