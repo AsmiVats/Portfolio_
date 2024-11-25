@@ -1,4 +1,4 @@
-import { ShowcaseCard } from "./projectCard"
+import ProjectCard from "./projectCard";
 import lms from "../../asserts/lms.png";
 
 const showcaseData = [
@@ -12,6 +12,7 @@ const showcaseData = [
       "Gamification elements integration",
     ],
     imageUrl: lms.src, // Correctly passing the imported image source
+    link: "https://example.com/medhavi-lms", // Example project link
   },
   {
     title: "EduTech Platform",
@@ -23,6 +24,7 @@ const showcaseData = [
       "User-friendly dashboard",
     ],
     imageUrl: lms.src, // Correctly passing the imported image source
+    link: "https://example.com/edutech-platform", // Example project link
   },
   {
     title: "FinTrack App",
@@ -34,6 +36,7 @@ const showcaseData = [
       "Multi-currency support",
     ],
     imageUrl: "/placeholder.svg?height=400&width=600", // Placeholder URL
+    link: "https://example.com/fintrack-app", // Example project link
   },
   {
     title: "HealthHub Portal",
@@ -45,19 +48,26 @@ const showcaseData = [
       "Telemedicine integration",
     ],
     imageUrl: "/placeholder.svg?height=400&width=600", // Placeholder URL
+    link: "https://example.com/healthhub-portal", // Example project link
   },
 ];
 
-
 export function ProjectSection() {
   return (
-    <div className="container mx-auto py-12">
- 
-        {showcaseData.map((showcase, index) => (
-          <ShowcaseCard key={index} {...showcase} />
-        ))}
-     
+    <div className="flex flex-col justify-center items-center mx-auto py-12 gap-10">
+      {showcaseData.map((project, index) => (
+        <ProjectCard
+          key={index}
+          title={project.title}
+          description={project.description}
+          points={project.features.map((feature) => ({
+            text: feature, // Using simplified feature list
+          }))}
+          imageSrc={project.imageUrl}
+          buttonLabel="View Project"
+          link={project.link} // Passing the project link
+        />
+      ))}
     </div>
-  )
+  );
 }
-

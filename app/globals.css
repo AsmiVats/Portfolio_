@@ -2,9 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@font-face {
+  font-family: "Degular Display";
+  src: url("/Degular Display Semibold-normal-400-100.ttf");
+  font-weight: 400;
 }
+/* 
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+} */
 
 @layer base {
   :root {

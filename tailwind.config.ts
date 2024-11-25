@@ -9,10 +9,15 @@ export default {
   ],
   theme: {
   	extend: {
-		fontFamily: {
-			manrope: ['Manrope', 'sans-serif'], 
-		  },
+
   		colors: {
+			whitesmoke: "#f4f2ef",
+          gray: {
+            "100": "#111011",
+            "200": "rgba(17, 16, 17, 0.6)",
+            "300": "rgba(17, 16, 17, 0.8)",
+          },
+          linen: "#eae8e1",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -57,9 +62,35 @@ export default {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+  			sm: 'calc(var(--radius) - 4px)',
+			"17xl": "36px",
+  		},
+		  spacing: {},
+		  fontFamily: {
+			manrope: "Manrope",
+			"degular-display": "'Degular Display'",
+		  },
+
+  	},
+	  fontSize: {
+        "mini-2": "14.2px",
+        "mini-5": "14.5px",
+        inherit: "inherit",
+      },
+	  screens: {
+        mq925: {
+          raw: "screen and (max-width: 925px)",
+        },
+        mq700: {
+          raw: "screen and (max-width: 700px)",
+        },
+        mq450: {
+          raw: "screen and (max-width: 450px)",
+        },
+      },
   },
+//   corePlugins: {
+// 	preflight: false,
+//   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
