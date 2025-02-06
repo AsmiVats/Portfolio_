@@ -120,7 +120,7 @@ const ProjectsSection: React.FC = () => {
                                 </a>
                             </div>
                             <div className="w-1/2 flex justify-center items-center">
-                                <Image src={card.image} alt={card.title} className="rounded-xl shadow-lg w-[80%]" />
+                                <Image src={card.image} alt={card.title}  width={500} height={300} className="rounded-xl shadow-lg w-[80%]" />
                             </div>
                         </div>
                     </li>
