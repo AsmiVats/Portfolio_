@@ -4,7 +4,7 @@ import './globals.css';
 
 
 import Navbar from "./pages/Navbar";
-import {ProjectSection} from "./pages/projects/ProjectSection";
+import ProjectsSection from "./pages/projects/ProjectsSection";
 
 export default async function Home() {
 
@@ -13,7 +13,7 @@ export default async function Home() {
     <div>
       <Navbar/>
       <Header/>
-      <ProjectSection/>
+      <ProjectsSection/>
     </div>
   );
 }

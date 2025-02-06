@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { SiTicktick } from "react-icons/si";
+// import { SiTicktick } from "react-icons/si";
 
 export type ProjectCardProps = {
   className?: string;
