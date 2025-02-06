@@ -1,7 +1,8 @@
 import React from 'react';
 import lms from "../../asserts/lms.png";
-import medipred from "../../asserts/medipred.png";
+import medicall from "../../asserts/medicall.png";
 import hireatease from "../../asserts/hireatease.png";
+import facto from "@/app/asserts/Facto.png"
 
 const ProjectsSection: React.FC = () => {
     const cards = [
@@ -32,7 +33,7 @@ const ProjectsSection: React.FC = () => {
             ],
             techStack: ["Python", "TensorFlow", "Flask"],
             projectLink: "https://example.com/medipred-ai",
-            image: medipred.src,
+            image: medicall.src,
             bgColor: 'bg-[#E5DBEB]',
             featuresbgColor: 'bg-[#DECAE8]',
             size: 'h-[73vh] w-[73vw]'
@@ -55,7 +56,7 @@ const ProjectsSection: React.FC = () => {
         },
         {
             id: 'card4',
-            title: 'Project 4',
+            title: 'Facto Admin Panel',
             description: 'An intuitive project with user-friendly interfaces and seamless experiences.',
             features: [
                 "Awesome visual identities & logo(s)",
@@ -64,7 +65,7 @@ const ProjectsSection: React.FC = () => {
             ],
             techStack: ["Next.js", "GraphQL", "MongoDB"],
             projectLink: "https://example.com/project4",
-            image: '/path.png',
+            image: facto.src,
             bgColor: 'bg-[#DCE4EA]',
             featuresbgColor: 'bg-[#CCD3D9]',
             size: 'h-[79vh] w-[79vw]'
