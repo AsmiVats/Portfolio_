@@ -3,6 +3,7 @@ import lms from "../../asserts/lms.png";
 import medicall from "../../asserts/medicall.png";
 import hireatease from "../../asserts/hireatease.png";
 import facto from "@/app/asserts/Facto.png"
+import Image from 'next/image';
 
 const ProjectsSection: React.FC = () => {
     const cards = [
@@ -119,7 +120,7 @@ const ProjectsSection: React.FC = () => {
                                 </a>
                             </div>
                             <div className="w-1/2 flex justify-center items-center">
-                                <img src={card.image} alt={card.title} className="rounded-xl shadow-lg w-[80%]" />
+                                <Image src={card.image} alt={card.title} className="rounded-xl shadow-lg w-[80%]" />
                             </div>
                         </div>
                     </li>

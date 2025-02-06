@@ -17,7 +17,7 @@ const floatingAnimation = {
     duration: 5,
     ease: 'easeInOut',
     repeat: Infinity,
-    repeatType: "mirror" as "mirror",
+    repeatType: "mirror" as const,
   },
 };
 
@@ -39,7 +39,7 @@ function Header() {
       <motion.div initial={{ y: 0 }} animate={floatingAnimation} className="text-center">
         <TextAnimation />
         <span className="text-white text-[24px] font-medium font-degular">
-          I'm Asmi Vats
+          I&apos;m Asmi Vats
           <br />
         </span>
         <span className="text-white text-[24px] font-light font-ivypresto">
