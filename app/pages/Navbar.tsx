@@ -1,4 +1,6 @@
 import React from 'react';
+import { TbMoodWink } from "react-icons/tb";
+
 
 function Navbar() {
   return (
@@ -12,8 +14,9 @@ function Navbar() {
       <div className="flex items-center">
         <a className="relative" href="#">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded-full bg-black"></span>
-          <span className="relative inline-block rounded-full border-2 border-black bg-[#d3f86e] px-4 py-2 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+          <span className="flex wrap relative rounded-full border-2 border-black bg-[#d3f86e] px-4 py-2 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
             Contact me
+            <TbMoodWink className='text-center'/>
           </span>
         </a>
       </div>
