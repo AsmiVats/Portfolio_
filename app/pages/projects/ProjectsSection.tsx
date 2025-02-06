@@ -7,70 +7,71 @@ import facto from "@/app/asserts/Facto.png"
 const ProjectsSection: React.FC = () => {
     const cards = [
         {
-            id: 'card1',
-            title: 'Medhavi LMS Service',
-            description: 'With a user-centered approach, the goal was to create an intuitive interface for effortless financial management while incorporating gamification.',
-            features: [
-                "Awesome visual identities & logo(s)",
-                "Intuitive user interface design",
-                "Gamification elements integration",
+            "id": "card1",
+            "title": "Medhavi LMS Service",
+            "description": "A powerful Learning Management System designed for seamless course management, progress tracking, and gamified learning experiences.",
+            "features": [
+                "Effortless course creation and student progress tracking",
+                "Secure role-based access for admins, instructors",
+                "Comprehensive analytics dashboard for insights "
             ],
-            techStack: ["React", "MongoDB", "Node.js"],
-            projectLink: "https://example.com/medhavi-lms",
-            image: lms.src,
-            bgColor: 'bg-[#F4F2EF]',
-            featuresbgColor: 'bg-[#EAE8E1]',
-            size: 'h-[70vh] w-[70vw]'
+            "techStack": ["React", "MongoDB", "Node.js"],
+            "projectLink": "https://example.com/medhavi-lms",
+            "image": lms.src,
+            "bgColor": "bg-[#F4F2EF]",
+            "featuresbgColor": "bg-[#EAE8E1]",
+            "size": "h-[70vh] w-[70vw]"
         },
         {
-            id: 'card2',
-            title: 'Medipred AI Disease Detector',
-            description: 'With a user-centered approach, the goal was to create an intuitive interface for efficient disease detection.',
-            features: [
-                "Awesome visual identities & logo(s)",
-                "Intuitive user interface design",
-                "Gamification elements integration",
+            "id": "card2",
+            "title": "Medipred SDK - AI Medical Assistance",
+            "description": "An AI-driven SDK for medical assistance, seamlessly connecting hospitals and doctors for rapid disease detection and diagnosis.",
+            "features": [
+                "Seamless integration with hospital management systems",
+                "Real-time doctor-patient consultation assistance",
+                "Secure API endpoints ensuring data privacy and compliance"
             ],
-            techStack: ["Python", "TensorFlow", "Flask"],
-            projectLink: "https://example.com/medipred-ai",
-            image: medicall.src,
-            bgColor: 'bg-[#E5DBEB]',
-            featuresbgColor: 'bg-[#DECAE8]',
-            size: 'h-[73vh] w-[73vw]'
+            "techStack": ["Python", "TensorFlow", "Flask"],
+            "projectLink": "https://example.com/medipred-ai",
+            "image": medicall.src,
+            "bgColor": "bg-[#E5DBEB]",
+            "featuresbgColor": "bg-[#DECAE8]",
+            "size": "h-[73vh] w-[73vw]"
         },
         {
-            id: 'card3',
-            title: 'Hireatease',
-            description: 'An intuitive hiring project with user-friendly interfaces and seamless experiences.',
-            features: [
-                "Awesome visual identities & logo(s)",
-                "Intuitive user interface design",
-                "Gamification elements integration",
+            "id": "card3",
+            "title": "Hireatease - Smart Hiring Platform",
+            "description": "A streamlined hiring platform designed for effortless recruiter-candidate connections with direct call interview integration.",
+            "features": [
+                "One-click direct call interview scheduling with Twilio",
+                "Comprehensive applicant tracking and resume parsing",
+                "Secure and scalable backend for high traffic handling"
             ],
-            techStack: ["React", "Mongo", "Express.js","Twilio"],
-            projectLink: "https://example.com/hireatease",
-            image: hireatease.src,
-            bgColor: 'bg-[#D2E8C8]',
-            featuresbgColor: 'bg-[#C1DEAF]',
-            size: 'h-[76vh] w-[76vw]'
+            "techStack": ["React", "MongoDB", "Express.js", "Twilio"],
+            "projectLink": "https://example.com/hireatease",
+            "image": hireatease.src,
+            "bgColor": "bg-[#D2E8C8]",
+            "featuresbgColor": "bg-[#C1DEAF]",
+            "size": "h-[76vh] w-[76vw]"
         },
         {
-            id: 'card4',
-            title: 'Facto Admin Panel',
-            description: 'An intuitive project with user-friendly interfaces and seamless experiences.',
-            features: [
-                "Awesome visual identities & logo(s)",
-                "Intuitive user interface design",
-                "Gamification elements integration",
+            "id": "card4",
+            "title": "Facto Admin Panel - Service Management",
+            "description": "A comprehensive admin panel for managing service providers, users, and operations with advanced role-based controls.",
+            "features": [
+                "Intelligent dashboard with real-time analytics and reporting",
+                "Admin, service provider, and customer role-based access control",
+                "Seamless service request and approval management",
             ],
-            techStack: ["Next.js", "GraphQL", "MongoDB"],
-            projectLink: "https://example.com/project4",
-            image: facto.src,
-            bgColor: 'bg-[#DCE4EA]',
-            featuresbgColor: 'bg-[#CCD3D9]',
-            size: 'h-[79vh] w-[79vw]'
+            "techStack": ["React.js", "Node.js", "MongoDB"],
+            "projectLink": "https://example.com/project4",
+            "image": facto.src,
+            "bgColor": "bg-[#DCE4EA]",
+            "featuresbgColor": "bg-[#CCD3D9]",
+            "size": "h-[79vh] w-[79vw]"
         }
-    ];
+    ]
+    
 
     return (
       <>
