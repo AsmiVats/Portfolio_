@@ -7,6 +7,8 @@ import Banner from '@/app/asserts/baner.png'
 
 import Navbar from "./pages/Navbar";
 import ProjectsSection from "./pages/projects/ProjectsSection";
+import AboutUs from "./pages/About";
+import { Footer } from "./pages/Footer";
 
 export default async function Home() {
 
@@ -19,6 +21,8 @@ export default async function Home() {
       <div className="my-4">
         <Image src={Banner} alt="Banner" className="w-full"/>
       </div>
+      <AboutUs/>
+      <Footer/>
     </div>
   );
 }

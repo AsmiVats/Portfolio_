@@ -4,6 +4,7 @@ import medicall from "../../asserts/medicall.png";
 import hireatease from "../../asserts/hireatease.png";
 import facto from "@/app/asserts/Facto.png"
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 const ProjectsSection: React.FC = () => {
     const cards = [
@@ -126,6 +127,9 @@ const ProjectsSection: React.FC = () => {
                     </li>
                 ))}
             </ul>
+            <div className='flex justify-center items-center my-6'>
+                <Button className='rounded-3xl'>View More</Button>
+            </div>
         </div>
       </>
     );

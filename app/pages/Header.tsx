@@ -25,7 +25,7 @@ const elements = [
   { src: element1, className: 'w-[80px]', top: '10%', left: '5%' },
   { src: element2, className: 'w-[80px]', bottom: '15%', right: '10%' },
   { src: element3, className: 'w-[100px]', top: '20%', right: '20%' },
-  { src: element4, className: 'w-[100px]', top: '30%', left: '15%' },
+  { src: element4, className: 'w-[120px]', top: '30%', left: '15%' },
   { src: element5, className: 'w-[80px]', bottom: '10%', left: '20%' },
   { src: element6, className: 'w-[80px]', top: '40%', right: '5%' },
 ];
@@ -38,7 +38,7 @@ function Header() {
       </div>
       <motion.div initial={{ y: 0 }} animate={floatingAnimation} className="text-center">
         <TextAnimation />
-        <span className="text-white text-[24px] font-medium font-degular">
+        <span className="text-white text-[24px] my-5 font-medium font-degular">
           I&apos;m Asmi Vats
           <br />
         </span>
