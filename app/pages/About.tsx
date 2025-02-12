@@ -63,11 +63,9 @@ function About() {
           <h1 className="text-5xl font-semibold mb-8">About Me</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-            {/*  eslint-disable react/no-unescaped-entities */ }
               <p className="text-gray-800 text-lg leading-relaxed">
-              II&#39;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
+              I&apos;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
               </p>
-              {/* eslint-enable react/no-unescaped-entities */}
             </div>
             <div className="space-y-6">
               <div className="border-b border-gray-200 pb-6">
