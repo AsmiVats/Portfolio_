@@ -7,8 +7,10 @@ import Banner from '@/app/asserts/baner.png'
 
 import Navbar from "./pages/Navbar";
 import ProjectsSection from "./pages/projects/ProjectsSection";
-import AboutUs from "./pages/About";
+import About from "./pages/About";
 import { Footer } from "./pages/Footer";
+import Info from "./pages/Info";
+import ServicesList from "./pages/ServicesList";
 
 export default async function Home() {
 
@@ -18,10 +20,13 @@ export default async function Home() {
       <Navbar/>
       <Header/>
       <ProjectsSection/>
-      <div className="my-4">
+      {/* <Info/> */}
+      <ServicesList/>
+      {/* <div className="my-4">
         <Image src={Banner} alt="Banner" className="w-full"/>
-      </div>
-      <AboutUs/>
+      </div> */}
+      <About/>
+
       <Footer/>
     </div>
   );

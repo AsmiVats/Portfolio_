@@ -22,18 +22,18 @@ const floatingAnimation = {
 };
 
 const elements = [
-  { src: element1, className: 'w-[80px]', top: '10%', left: '5%' },
-  { src: element2, className: 'w-[80px]', bottom: '15%', right: '10%' },
-  { src: element3, className: 'w-[100px]', top: '20%', right: '20%' },
-  { src: element4, className: 'w-[120px]', top: '30%', left: '15%' },
-  { src: element5, className: 'w-[80px]', bottom: '10%', left: '20%' },
-  { src: element6, className: 'w-[80px]', top: '40%', right: '5%' },
+  { src: element1, className: 'w-[50px] sm:w-[70px] md:w-[80px]', top: '10%', left: '5%' },
+  { src: element2, className: 'w-[50px] sm:w-[70px] md:w-[80px]', bottom: '15%', right: '10%' },
+  { src: element3, className: 'w-[60px] sm:w-[80px] md:w-[100px]', top: '20%', right: '20%' },
+  { src: element4, className: 'w-[70px] sm:w-[90px] md:w-[120px] ', top: '30%', left: '15%' },
+  { src: element5, className: 'w-[50px] sm:w-[70px] md:w-[80px]', bottom: '10%', left: '20%' },
+  { src: element6, className: 'w-[50px] sm:w-[70px] md:w-[80px]', top: '40%', right: '5%' },
 ];
 
 function Header() {
   return (
     <div className="bg-[#4c6ee2] h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
-      <div className="font-extrabold text-pretty text-center text-[#ffffff] mb-10">
+      <div className="font-extrabold text-pretty text-center text-[#ffffff] ">
         {/* <img src='/title.svg' alt="Title" /> */}
       </div>
       <motion.div initial={{ y: 0 }} animate={floatingAnimation} className="text-center">

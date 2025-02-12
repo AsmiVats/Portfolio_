@@ -9,9 +9,21 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url('https://api.fontshare.com/v2/css?f[]=degular-display@400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+
+.font-degular {
+  font-family: 'Degular Display', sans-serif;
+}
+
+.font-dm{
+  font-family: 'DM Serif Display',
+}
+
 @font-face {
   font-family: "Degular Display";
-  src: url("/Degular Display Semibold-normal-400-100.ttf");
+  src: url("https://api.fontshare.com/v2/css?f[]=degular-display@400,500,600&display=swap");
   font-weight: 400;
 }
 /* 

@@ -22,11 +22,11 @@ const ProjectsSection: React.FC = () => {
             "image": lms.src,
             "bgColor": "bg-[#F4F2EF]",
             "featuresbgColor": "bg-[#EAE8E1]",
-            "size": "h-[70vh] w-[70vw]"
+            "size": "md:h-[72vh] md:w-[72vw]",
         },
         {
             "id": "card2",
-            "title": "Medipred SDK - AI Medical Assistance",
+            "title": "MediCall SDK",
             "description": "An AI-driven SDK for medical assistance, seamlessly connecting hospitals and doctors for rapid disease detection and diagnosis.",
             "features": [
                 "Seamless integration with hospital management systems",
@@ -38,7 +38,7 @@ const ProjectsSection: React.FC = () => {
             "image": medicall.src,
             "bgColor": "bg-[#E5DBEB]",
             "featuresbgColor": "bg-[#DECAE8]",
-            "size": "h-[73vh] w-[73vw]"
+            "size": "md:h-[75vh] md:w-[75vw]"
         },
         {
             "id": "card3",
@@ -54,7 +54,7 @@ const ProjectsSection: React.FC = () => {
             "image": hireatease.src,
             "bgColor": "bg-[#D2E8C8]",
             "featuresbgColor": "bg-[#C1DEAF]",
-            "size": "h-[76vh] w-[76vw]"
+            "size": "md:h-[78vh] md:w-[78vw]"
         },
         {
             "id": "card4",
@@ -70,7 +70,7 @@ const ProjectsSection: React.FC = () => {
             "image": facto.src,
             "bgColor": "bg-[#DCE4EA]",
             "featuresbgColor": "bg-[#CCD3D9]",
-            "size": "h-[79vh] w-[79vw]"
+            "size": "md:h-[81vh] md:w-[81vw]"
         }
     ]
     
@@ -78,7 +78,7 @@ const ProjectsSection: React.FC = () => {
     return (
       <>
         <div className="container mt-4 mx-auto p-4 flex flex-col items-center">
-            <h2 className='font-degular-display text-[40px] font-[500] my-4'>Explore My Projects</h2>
+            <h2 className='font-degular-display md:text-[40px] text-[24px] font-[500] my-4'>Explore My Projects</h2>
             <p className='text-center mb-8'>Our works are a blend of innovative thinking and practical solutions,
             <br/>
             ensuring they are both unique and effective.
@@ -92,36 +92,35 @@ const ProjectsSection: React.FC = () => {
                         style={{ '--index': index + 1 } as React.CSSProperties}
                     >
                         <div
-                            className={`card-body ${card.bgColor} flex rounded-3xl  transition-all duration-500 p-8 ${card.size} flex justify-center items-center animate-on-scroll`}
+                            className={`card-body w-full h-auto ${card.bgColor} flex-col md:flex-row rounded-3xl transition-all duration-500 p-8 ${card.size}  flex justify-center items-center animate-on-scroll`}
                         >
-                            <div className="flex flex-col justify-center w-1/2 text-left">
-                                <h2 className="text-[24px] font-bold mb-4 font-[degular-display]">{card.title}</h2>
-                                <p className=" text-lg mb-4 font-[manrope]">{card.description}</p>
+                            <div className="flex flex-col justify-center w-full md:w-1/2 text-left">
+                                <h2 className="md:text-[26px] text-[18px] md:py-0 py-2 font-semibold md:mb-4 ">{card.title}</h2>
+                                <p className=" md:text-[18px] text-[14px] mb-4 font-[manrope]">{card.description}</p>
 
                                 {/* Features as badges */}
-                                <div className="flex flex-col flex-wrap gap-3 mb-4">
+                                <div className="flex flex-col flex-wrap md:gap-3 gap-1.5 mb-4">
                                     {card.features.map((feature, i) => (
-                                        <span key={i} className={`${card.featuresbgColor} text-black text-[14px] px-3 py-1 rounded-full w-3/4`}>{feature}</span>
+                                        <span key={i} className={`${card.featuresbgColor} text-black md:text-[14px] text-[12px] px-3 py-1 rounded-full md:w-3/4 w-full`}>{feature}</span>
                                     ))}
                                 </div>
 
                                 {/* Tech Stack */}
-                                <p className=" text-sm mb-2 font-semibold">Tech Stack:</p>
+                                <p className=" text-[14px] mb-2 font-semibold">Tech Stack:</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {card.techStack.map((tech, i) => (
-                                        <span key={i} className="bg-gray-800 text-white text-xs px-3 py-1 rounded-full">{tech}</span>
+                                        <span key={i} className="bg-gray-800 text-white text-[12px] px-3 py-1 rounded-full">{tech}</span>
                                     ))}
                                 </div>
 
                                 {/* View Project Button */}
-                                <a href={card.projectLink} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-transparent text-black px-4 py-2 rounded-full  hover:underline transition">
+                                <a href={card.projectLink} target="_blank" rel="noopener noreferrer"
+                                className="bg-transparent text-[14px] md:text-[16px] text-black py-1 md:py-4 rounded-full  hover:underline transition">
                                         View Project →
-                                    </button>
                                 </a>
                             </div>
-                            <div className="w-1/2 flex justify-center items-center">
-                                <Image src={card.image} alt={card.title}  width={500} height={300} className="rounded-xl shadow-lg w-[80%]" />
+                            <div className="md:w-1/2 w-full flex justify-center items-center">
+                                <Image src={card.image} alt={card.title}  width={500} height={300} className="rounded-xl shadow-lg w-full md:w-[80%]" />
                             </div>
                         </div>
                     </li>

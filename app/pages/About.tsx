@@ -1,128 +1,117 @@
-import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
-import { Card } from "@/components/ui/card"
-import profile from "@/app/asserts/profile.jpg"
+'use client';
 
-export default function AboutUs() {
-  const technologies = [
-    {
-      name: "Figma",
-      description: "Design Tool",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-purple-50",
-    },
-    {
-      name: "TypeScript",
-      description: "JavaScript but better",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-blue-50",
-    },
-    {
-      name: "React",
-      description: "JavaScript Library",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-cyan-50",
-    },
-    {
-      name: "NextJS",
-      description: "React Framework",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-gray-100",
-    },
-    {
-      name: "Tailwind",
-      description: "CSS framework",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-blue-50",
-    },
-    {
-      name: "Git",
-      description: "Version control",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-red-50",
-    },
-    {
-      name: "NodeJS",
-      description: "Backend tool",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-green-50",
-    },
-    {
-      name: "NPM",
-      description: "Package manager",
-      icon: "/placeholder.svg?height=40&width=40",
-      color: "bg-red-50",
-    },
-  ]
+import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
 
+
+const technologies = [
+  {
+    name: 'Figma',
+    description: 'Design Tool',
+    bg:"bg-[#0ACF8333]",
+    image: '/icons/figma.png'
+  },
+  {
+    name: 'TypeScript',
+    description: 'JavaScript but better',
+    bg:"bg-[#3178C633]",
+    image: '/icons/typescript.png'
+  },
+  {
+    name: 'React',
+    description: 'JavaScript Library',
+    bg:"bg-[#61DAFB33]",
+    image: '/icons/react.png'
+  },
+  {
+    name: 'NextJS',
+    description: 'React framework',
+    bg:"bg-[#000000]",
+    image: '/icons/next.png'
+  },
+  {
+    name: 'Tailwind',
+    description: 'CSS framework',
+    bg:"bg-[#0EA5E933]",
+    image: '/icons/tailwind.png'
+  },
+  {
+    name: 'Git',
+    description: 'Version control',
+    bg:"bg-[#F1502F33]",
+    image: '/icons/git.png'
+  },
+  {
+    name: 'NodeJS',
+    description: 'Backend tool',
+    bg:"bg-[#3ECF8E33]",
+    image: '/icons/node.png'
+  },
+  {
+    name: 'NPM',
+    description: 'Package manager',
+    bg:"bg-[#F02D6533]",
+    image: '/icons/npm.png'
+  }
+];
+
+function About() {
   return (
-    <main className="container mx-auto px-4 py-12 ">
-      <section className="mb-16">
-        <h1 className="text-4xl font-bold mb-8">About Me</h1>
-        <div className="flex gap-8 items-start">
-          <div className="flex-1">
-            <p className="text-lg leading-relaxed text-gray-700">
-              I'm a web developer and software engineer dedicated to crafting innovative, high-performance digital
-              solutions. With a strong foundation in design and development, I blend creativity with technical expertise
-              to build seamless, user-friendly experiences. My approach is driven by shared values, open communication,
-              and a deep respect for the end user—because great software starts with understanding the people who use
-              it.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      <section className="mb-16 space-y-4">
-        <Card className="p-4 hover:bg-gray-50 transition-colors cursor-pointer ">
-          <div className="flex items-center justify-between">
+    <div className="min-h-screen bg-white p-8 md:p-16 font-degular">
+      <div className="max-w-6xl mx-auto space-y-24">
+        <section>
+          <h1 className="text-5xl font-semibold mb-8">About Me</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="font-semibold">OS Code Solutions (August 2024 - January 2025)</h2>
-              <p className="text-sm text-gray-500">FULL-STACK DEVELOPER</p>
+              <p className="text-gray-800 text-lg leading-relaxed">
+                I'm Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
+              </p>
             </div>
-            <ArrowUpRight className="text-gray-400" />
-          </div>
-        </Card>
-
-        <Card className="p-4 hover:bg-gray-50 transition-colors cursor-pointer">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="font-semibold">VIT Bhopal University</h2>
-              <p className="text-sm text-gray-500">B.TECH IN COMPUTER SCIENCE</p>
-              <p className="text-sm text-gray-500">GPA - 9.2</p>
-            </div>
-            <ArrowUpRight className="text-gray-400" />
-          </div>
-        </Card>
-      </section>
-
-      <section>
-        <h2 className="text-3xl font-bold mb-6">Current technologies</h2>
-        <p className="text-gray-600 mb-8">
-          I'm proficient in a range of modern technologies that empower me to build highly functional solutions. These
-          are some of my main technologies:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {technologies.map((tech) => (
-            <div key={tech.name} className="flex items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-              <div className={`p-2 rounded-lg ${tech.color}`}>
-                <Image
-                  src={tech.icon || "/placeholder.svg"}
-                  alt={tech.name}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10"
-                />
+            <div className="space-y-6">
+              <div className="border-b border-gray-200 pb-6">
+                <div className="flex items-center justify-between group cursor-pointer">
+                  <div>
+                    <h3 className="text-lg font-medium">OS Code Solutions (August 2024 - January 2025)</h3>
+                    <p className="text-gray-600 uppercase text-sm mt-1">FULL-STACK DEVELOPER</p>
+                  </div>
+                  <ArrowUpRight className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold">{tech.name}</h3>
-                <p className="text-sm text-gray-500">{tech.description}</p>
+              <div className="border-b border-gray-200 pb-6">
+                <div className="flex items-center justify-between group cursor-pointer">
+                  <div>
+                    <h3 className="text-lg font-medium">VIT Bhopal University</h3>
+                    <p className="text-gray-600 uppercase text-sm mt-1">B.TECH IN COMPUTER SCIENCE</p>
+                    <p className="text-gray-600 text-sm mt-1">GPA - 9.5</p>
+                  </div>
+                  <ArrowUpRight className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-      </section>
-    </main>
-  )
+          </div>
+        </section>
+        <section>
+          <h2 className="text-4xl font-semibold mb-6">Current technologies</h2>
+          <p className="text-gray-600 mb-12 max-w-3xl">
+            I'm proficient in a range of modern technologies that empower me to build highly functional solutions. These are some of my main technologies:
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {technologies.map((tech) => (
+              <div key={tech.name} className="flex items-center space-x-4 p-4 rounded-lg border border-gray-100 hover:border-gray-200 transition-colors">
+                <div className={`w-10 h-10 flex items-center justify-center ${tech.bg} rounded-lg overflow-hidden`}>
+                  <Image src={tech.image} alt={tech.name} width={25} height={25} />
+                </div>
+                <div>
+                  <h3 className="font-medium">{tech.name}</h3>
+                  <p className="text-sm text-gray-600">{tech.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 }
 
+export default About;
