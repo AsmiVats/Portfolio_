@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className="bg-[#4c6ee2] w-full flex justify-between items-center p-4 relative z-[1000]">
 
-      <div className="text-white text-[20px] font-semibold font-degular-display ml-4"></div>
+      <div className="text-white text-[20px] font-semibold font-degular ml-4"></div>
 
       <div className="hidden md:flex items-center space-x-4 mr-6">
         <div className="text-white text-[20px] font-semibold font-degular">Portfolio</div>

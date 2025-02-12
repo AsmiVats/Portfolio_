@@ -38,12 +38,19 @@ function Header() {
       </div>
       <motion.div initial={{ y: 0 }} animate={floatingAnimation} className="text-center">
         <TextAnimation />
-        <span className="text-white text-[24px] my-5 font-medium font-degular">
+        <span className="text-white text-[26px] md:text-[35px] my-5 font-medium "
+        style={{
+          fontFamily:"'Degular Display', sans-serif"
+      }}>
           I&apos;m Asmi Vats
           <br />
         </span>
-        <span className="text-white text-[24px] font-light font-ivypresto">
-          Web Developer & Student
+        <span className="text-white text-[24px] md:text-[30px] font-light "
+        style={{
+          fontFamily: "'IvyPresto', serif",
+          // fontStyle: "italic",
+        }}>
+         Software Developer 
         </span>
       </motion.div>
       

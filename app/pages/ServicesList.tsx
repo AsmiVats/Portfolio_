@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Circle, Star, Sparkles, Diamond } from "lucide-react"
 
 const Semicircle = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 19C15.866 19 19 15.866 19 12H5C5 15.866 8.13401 19 12 19Z" fill="#BFFF80" />
   </svg>
 )
@@ -13,7 +13,7 @@ export default function ServicesList() {
   const services = [
     {
       text: "Software Developer",
-      decoration: <Circle className="text-[#B4A7FF] fill-[#B4A7FF]" size={30} />,
+      decoration: <Circle className="text-[#B4A7FF] fill-[#B4A7FF]" size={70} />,
     },
     {
       text: "Web Designer",
@@ -21,15 +21,15 @@ export default function ServicesList() {
     },
     {
       text: "Motion Graphic",
-      decoration: <Sparkles className="text-[#FF9EDB]" size={30} />,
+      decoration: <Sparkles className="text-[#FF9EDB]" size={70} />,
     },
     {
       text: "Illustration",
-      decoration: <Diamond className="text-[#809FFF] fill-[#809FFF]" size={30} />,
+      decoration: <Diamond className="text-[#809FFF] fill-[#809FFF]" size={70} />,
     },
     {
       text: "Content Writer",
-      decoration: <Star className="text-[#FFE380] fill-[#FFE380]" size={30} />,
+      decoration: <Star className="text-[#FFE380] fill-[#FFE380]" size={70} />,
     },
   ]
 
@@ -66,15 +66,16 @@ export default function ServicesList() {
             className="flex items-center justify-center gap-3 text-white group"
           >
             <span
-              className="text-4xl md:text-5xl lg:text-6xl whitespace-nowrap font-serif italic"
+              className="text-4xl md:text-7xl whitespace-nowrap font-ivy-presto"
               style={{
-                fontFamily: "'DM Serif Display', serif",
+                fontFamily: "'IvyPresto', serif",
                 fontStyle: "italic",
               }}
             >
               {service.text}
             </span>
-            <motion.div
+            {/* <motion.div
+            className="flex justify-center items-center"
               initial={{ scale: 1 }}
               animate={{ scale: [1, 1.2, 1] }}
               transition={{
@@ -85,7 +86,7 @@ export default function ServicesList() {
               }}
             >
               {service.decoration}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         ))}
       </motion.div>

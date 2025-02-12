@@ -1,15 +1,10 @@
 import React from "react";
 import Header from "./pages/Header";
 import './globals.css';
-import Image from "next/image";
-import Banner from '@/app/asserts/baner.png'
-
-
 import Navbar from "./pages/Navbar";
 import ProjectsSection from "./pages/projects/ProjectsSection";
 import About from "./pages/About";
 import { Footer } from "./pages/Footer";
-import Info from "./pages/Info";
 import ServicesList from "./pages/ServicesList";
 
 export default async function Home() {
@@ -20,11 +15,8 @@ export default async function Home() {
       <Navbar/>
       <Header/>
       <ProjectsSection/>
-      {/* <Info/> */}
       <ServicesList/>
-      {/* <div className="my-4">
-        <Image src={Banner} alt="Banner" className="w-full"/>
-      </div> */}
+
       <About/>
 
       <Footer/>

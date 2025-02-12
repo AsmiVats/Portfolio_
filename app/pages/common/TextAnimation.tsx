@@ -16,7 +16,7 @@ export default function TextAnimation() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center text-white text-[166px] font-bold">
+    <div className="flex justify-center items-center text-white text-[110px] md:text-[166px] font-bold">
       <motion.span
         key={index}
         initial={{ opacity: 0, y: 20 }}

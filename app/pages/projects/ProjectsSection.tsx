@@ -78,7 +78,7 @@ const ProjectsSection: React.FC = () => {
     return (
       <>
         <div className="container mt-4 mx-auto p-4 flex flex-col items-center">
-            <h2 className='font-degular-display md:text-[40px] text-[24px] font-[500] my-4'>Explore My Projects</h2>
+            <h2 className='font-degular md:text-[40px] text-[24px] font-[500] my-4'>Explore My Projects</h2>
             <p className='text-center mb-8'>Our works are a blend of innovative thinking and practical solutions,
             <br/>
             ensuring they are both unique and effective.
@@ -95,8 +95,15 @@ const ProjectsSection: React.FC = () => {
                             className={`card-body w-full h-auto ${card.bgColor} flex-col md:flex-row rounded-3xl transition-all duration-500 p-8 ${card.size}  flex justify-center items-center animate-on-scroll`}
                         >
                             <div className="flex flex-col justify-center w-full md:w-1/2 text-left">
-                                <h2 className="md:text-[26px] text-[18px] md:py-0 py-2 font-semibold md:mb-4 ">{card.title}</h2>
-                                <p className=" md:text-[18px] text-[14px] mb-4 font-[manrope]">{card.description}</p>
+                                <h2 className="md:text-[26px] text-[18px] md:py-0 py-2 font-[500] md:mb-4 "
+                                style={{
+                                    fontFamily:"'Degular Display', sans-serif"
+                                }}>{card.title}</h2>
+                                <p className=" md:text-[16px] text-[14px] text-[#6C6B6A] mb-4 "
+                                style={{
+                                    fontFamily:"'Degular Display', sans-serif"
+                                }}
+                                >{card.description}</p>
 
                                 {/* Features as badges */}
                                 <div className="flex flex-col flex-wrap md:gap-3 gap-1.5 mb-4">

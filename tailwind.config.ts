@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-    darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -67,8 +66,9 @@ export default {
   		},
 		  spacing: {},
 		  fontFamily: {
-			manrope: "Manrope",
-			"degular-display": "'Degular Display'",
+			degular: ["'Degular Display'", "sans-serif"],
+			dm: ["'DM Serif Display'", "serif"],
+			manrope: ["'Manrope'", "sans-serif"],
 		  },
 
   	},
