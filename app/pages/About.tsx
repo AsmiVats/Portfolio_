@@ -65,7 +65,7 @@ function About() {
             <div>
             {/*  eslint-disable react/no-unescaped-entities */ }
               <p className="text-gray-800 text-lg leading-relaxed">
-              I&apos;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
+              II&#39;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
               </p>
               {/* eslint-enable react/no-unescaped-entities */}
             </div>
