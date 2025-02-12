@@ -64,7 +64,7 @@ function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
               <p className="text-gray-800 text-lg leading-relaxed">
-                I&apos;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
+              I&lsquo;m Asmi Vats, a web developer and software engineer dedicated to crafting intuitive, high-performance digital solutions. With a strong foundation in design and development, I blend creativity with technical expertise to build seamless, user-friendly experiences.
               </p>
             </div>
             <div className="space-y-6">
