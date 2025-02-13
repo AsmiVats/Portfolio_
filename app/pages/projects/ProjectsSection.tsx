@@ -5,6 +5,7 @@ import hireatease from "../../asserts/hireatease.png";
 import facto from "@/app/asserts/Facto.png"
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const ProjectsSection: React.FC = () => {
     const cards = [
@@ -33,7 +34,7 @@ const ProjectsSection: React.FC = () => {
                 "Real-time doctor-patient consultation assistance",
                 "Secure API endpoints ensuring data privacy and compliance"
             ],
-            "techStack": ["Python", "TensorFlow", "Flask"],
+            "techStack": ["Node", "Mongo", "npm"],
             "projectLink": "https://github.com/AsmiVats/Health-Hack",
             "image": medicall.src,
             "bgColor": "bg-[#E5DBEB]",
@@ -134,7 +135,7 @@ const ProjectsSection: React.FC = () => {
                 ))}
             </ul>
             <div className='flex justify-center items-center my-6'>
-                <Button className='rounded-3xl'>View More</Button>
+                <Link href='https://github.com/AsmiVats'> <Button className='cursor-pointer shadow-md transform active:scale-95 rounded-3xl'>View More</Button></Link>
             </div>
         </div>
       </>

@@ -6,6 +6,7 @@ import ProjectsSection from "./pages/projects/ProjectsSection";
 import About from "./pages/About";
 import { Footer } from "./pages/Footer";
 import ServicesList from "./pages/ServicesList";
+import Banner from "./pages/Banner";
 
 export default async function Home() {
   return (
@@ -16,7 +17,7 @@ export default async function Home() {
       <ServicesList/>
 
       <About/>
-
+      <Banner/>
       <Footer/>
     </div>
   );
