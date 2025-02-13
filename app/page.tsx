@@ -8,8 +8,6 @@ import { Footer } from "./pages/Footer";
 import ServicesList from "./pages/ServicesList";
 
 export default async function Home() {
-
-  // await new Promise(r=>setTimeout(r,10000));
   return (
     <div>
       <Navbar/>

@@ -57,7 +57,7 @@ export default function ServicesList() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-900 flex items-center justify-center p-4">
+    <div  className="min-h-screen bg-zinc-900 flex items-center justify-center p-4">
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="text-center space-y-5">
         {services.map((service, index) => (
           <motion.div

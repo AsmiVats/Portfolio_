@@ -10,7 +10,7 @@ const ProjectsSection: React.FC = () => {
     const cards = [
         {
             "id": "card1",
-            "title": "Medhavi LMS Service",
+            "title": "LMS Service",
             "description": "A powerful Learning Management System designed for seamless course management, progress tracking, and gamified learning experiences.",
             "features": [
                 "Effortless course creation and student progress tracking",
@@ -18,7 +18,7 @@ const ProjectsSection: React.FC = () => {
                 "Comprehensive analytics dashboard for insights "
             ],
             "techStack": ["React", "MongoDB", "Node.js"],
-            "projectLink": "https://example.com/medhavi-lms",
+            "projectLink": "https://github.com/Acadsynk",
             "image": lms.src,
             "bgColor": "bg-[#F4F2EF]",
             "featuresbgColor": "bg-[#EAE8E1]",
@@ -34,7 +34,7 @@ const ProjectsSection: React.FC = () => {
                 "Secure API endpoints ensuring data privacy and compliance"
             ],
             "techStack": ["Python", "TensorFlow", "Flask"],
-            "projectLink": "https://example.com/medipred-ai",
+            "projectLink": "https://github.com/AsmiVats/Health-Hack",
             "image": medicall.src,
             "bgColor": "bg-[#E5DBEB]",
             "featuresbgColor": "bg-[#DECAE8]",
@@ -50,7 +50,7 @@ const ProjectsSection: React.FC = () => {
                 "Secure and scalable backend for high traffic handling"
             ],
             "techStack": ["React", "MongoDB", "Express.js", "Twilio"],
-            "projectLink": "https://example.com/hireatease",
+            "projectLink": "https://github.com/AsmiVats/hireatease",
             "image": hireatease.src,
             "bgColor": "bg-[#D2E8C8]",
             "featuresbgColor": "bg-[#C1DEAF]",
@@ -66,7 +66,7 @@ const ProjectsSection: React.FC = () => {
                 "Seamless service request and approval management",
             ],
             "techStack": ["React.js", "Node.js", "MongoDB"],
-            "projectLink": "https://example.com/project4",
+            "projectLink": "https://github.com/Acadsynk",
             "image": facto.src,
             "bgColor": "bg-[#DCE4EA]",
             "featuresbgColor": "bg-[#CCD3D9]",
@@ -77,7 +77,7 @@ const ProjectsSection: React.FC = () => {
 
     return (
       <>
-        <div className="container mt-4 mx-auto p-4 flex flex-col items-center">
+        <div id="services" className="container mt-4 mx-auto p-4 flex flex-col items-center">
             <h2 className='font-degular md:text-[40px] text-[24px] font-[500] my-4'>Explore My Projects</h2>
             <p className='text-center mb-8'>Our works are a blend of innovative thinking and practical solutions,
             <br/>

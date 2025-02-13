@@ -1,6 +1,7 @@
 'use client';
 
 import { Sparkles, Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 
 function Navbar() {
@@ -11,16 +12,16 @@ function Navbar() {
 
       <div className="text-white text-[20px] font-semibold font-degular ml-4"></div>
 
-      <div className="hidden md:flex items-center space-x-4 mr-6">
-        <div className="text-white text-[20px] font-semibold font-degular">Portfolio</div>
-        <div className="text-white text-[20px] font-semibold font-degular">Services</div>
-        <div className="text-[#d3f86e] text-[20px] font-semibold font-degular">About</div>
+      <div className="hidden md:flex items-center space-x-4 justify-between mx-auto">
+        <Link href='#home' className="text-white text-[20px] font-semibold font-degular">Portfolio</Link>
+        <Link href='#services' className="text-white text-[20px] font-semibold font-degular">Services</Link>
+        <Link href='#about' className="text-[#d3f86e] text-[20px] font-semibold font-degular">About</Link>
       </div>
 
       <div className="hidden md:flex items-center">
         <a className="relative" href="#">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded-full bg-black"></span>
-          <span className="flex items-center gap-1 relative rounded-full border-2 border-black bg-[#d3f86e] px-4 py-2 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+          <span className="flex items-center gap-1 relative rounded-full border-2 border-black bg-[#d3f86e] px-4 py-2 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 transform active:scale-96 ">
             Contact me
             <Sparkles />
           </span>

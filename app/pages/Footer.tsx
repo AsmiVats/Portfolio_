@@ -8,7 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo Section */}
           <div className="space-y-4">
-            <h3 className="text-sm font-light mb-4">Logo</h3>
+            <h3 className="text-[16px] font-light mb-4"
+            style={{
+              fontFamily: "'IvyPresto', serif",
+              fontStyle: "italic",
+            }}>
+              Asmi Vats</h3>
             <div className="space-y-1">
               <p className="text-lg">
                 The power of <span className="italic">design.</span>
@@ -31,13 +36,13 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-light mb-4">Link</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="/portfolio" className="hover:underline underline-offset-4">
+              <Link href="#home" className="hover:underline underline-offset-4">
                 Portfolio
               </Link>
-              <Link href="/services" className="hover:underline underline-offset-4">
+              <Link href="#services" className="hover:underline underline-offset-4">
                 Services
               </Link>
-              <Link href="/about" className="hover:underline underline-offset-4">
+              <Link href="#about" className="hover:underline underline-offset-4">
                 About
               </Link>
             </nav>
@@ -48,7 +53,7 @@ export function Footer() {
             <h3 className="text-sm font-light mb-4">Social Media</h3>
             <nav className="flex flex-col space-y-2">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/vatsasmi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline underline-offset-4 flex gap-1"
@@ -56,7 +61,7 @@ export function Footer() {
                 <Instagram/>Instagram
               </Link>
               <Link
-                href="https://behance.net"
+                href="https://github.com/AsmiVats"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline underline-offset-4 flex gap-1"
@@ -64,7 +69,7 @@ export function Footer() {
               <Github/>  Github
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/asmivats/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline underline-offset-4 flex gap-1"

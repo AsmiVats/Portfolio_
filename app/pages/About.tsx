@@ -57,7 +57,7 @@ const technologies = [
 
 function About() {
   return (
-    <div className="min-h-screen bg-white p-8 md:p-16 font-degular">
+    <div id='about' className="min-h-screen bg-white p-8 md:p-16 font-degular">
       <div className="max-w-6xl mx-auto space-y-24">
         <section>
           <h1 className="text-5xl font-semibold mb-8">About Me</h1>
@@ -82,7 +82,7 @@ function About() {
                   <div>
                     <h3 className="text-lg font-medium">VIT Bhopal University</h3>
                     <p className="text-gray-600 uppercase text-sm mt-1">B.TECH IN COMPUTER SCIENCE</p>
-                    <p className="text-gray-600 text-sm mt-1">GPA - 9.5</p>
+                    <p className="text-gray-600 text-sm mt-1">GPA - 9.22</p>
                   </div>
                   <ArrowUpRight className="text-gray-400 group-hover:text-gray-600 transition-colors" />
                 </div>

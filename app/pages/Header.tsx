@@ -25,8 +25,8 @@ const elements = [
   { src: element1, className: 'w-[50px] sm:w-[70px] md:w-[80px]', top: '10%', left: '5%' },
   { src: element2, className: 'w-[50px] sm:w-[70px] md:w-[80px]', bottom: '15%', right: '10%' },
   { src: element3, className: 'w-[60px] sm:w-[80px] md:w-[100px]', top: '20%', right: '20%' },
-  { src: element4, className: 'w-[70px] sm:w-[90px] md:w-[120px] ', top: '30%', left: '15%' },
-  { src: element5, className: 'w-[50px] sm:w-[70px] md:w-[80px]', bottom: '10%', left: '20%' },
+  { src: element4, className: 'w-[70px] sm:w-[90px] md:w-[130px] ', top: '25%', left: '15%' },
+  { src: element5, className: 'w-[50px] sm:w-[70px] md:w-[80px]', bottom: '15%', left: '20%' },
   { src: element6, className: 'w-[50px] sm:w-[70px] md:w-[80px]', top: '40%', right: '5%' },
 ];
 
@@ -48,7 +48,7 @@ function Header() {
         <span className="text-white text-[24px] md:text-[30px] font-light "
         style={{
           fontFamily: "'IvyPresto', serif",
-          // fontStyle: "italic",
+          fontStyle: "italic",
         }}>
          Software Developer 
         </span>
