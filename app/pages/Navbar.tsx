@@ -10,7 +10,9 @@ function Navbar() {
   return (
     <div className="bg-[#4c6ee2] w-full flex justify-between items-center p-4 relative z-[1000]">
 
-      <div className="text-white text-[20px] font-semibold font-degular ml-4"></div>
+      <div className="text-white font-semibold font-degular ml-4">
+        <img src='/logo.svg' className='h-7'/>
+      </div>
 
       <div className="hidden md:flex items-center space-x-4 justify-between mx-auto">
         <Link href='#home' className="text-white text-[20px] font-semibold font-degular">Portfolio</Link>
@@ -19,7 +21,7 @@ function Navbar() {
       </div>
 
       <div className="hidden md:flex items-center">
-        <a className="relative" href="#">
+        <a className="relative" href="mailto:asmivats15@gmail.com">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded-full bg-black"></span>
           <span className="flex items-center gap-1 relative rounded-full border-2 border-black bg-[#d3f86e] px-4 py-2 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 transform active:scale-96 ">
             Contact me
