@@ -18,7 +18,7 @@ export default function Banner() {
   }, [baseX]);
 
   useAnimationFrame((_, delta) => {
-    let moveBy = (delta / 1000) * 100;
+    const moveBy = (delta / 1000) * 100;
     setBaseX(prevBaseX => prevBaseX - moveBy);
     resetPosition();
   });
