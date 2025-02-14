@@ -6,10 +6,10 @@ import { ArrowUpRight } from 'lucide-react';
 
 const technologies = [
   {
-    name: 'Figma',
-    description: 'Design Tool',
+    name: 'MongoDB',
+    description: 'Database',
     bg:"bg-[#0ACF8333]",
-    image: '/icons/figma.png'
+    image: '/icons/MongoDB.png'
   },
   {
     name: 'TypeScript',
