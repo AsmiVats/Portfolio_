@@ -1,6 +1,7 @@
 'use client';
 
 import { Sparkles, Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -11,7 +12,13 @@ function Navbar() {
     <div className="bg-[#4c6ee2] w-full flex justify-between items-center p-4 relative z-[1000]">
 
       <div className="text-white font-semibold font-degular ml-4">
-        <img src='/logo.svg' className='h-7'/>
+      <Image 
+        src='/logo.svg' 
+        alt='Logo' 
+        layout="intrinsic" 
+        width={120} 
+        height={32} 
+      />      
       </div>
 
       <div className="hidden md:flex items-center space-x-4 justify-between mx-auto">
