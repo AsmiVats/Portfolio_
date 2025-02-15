@@ -20,7 +20,9 @@
 .font-dm{
   font-family: 'DM Serif Display',
 }
-
+* {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Degular Display";
   src: url("https://api.fontshare.com/v2/css?f[]=degular-display@400,500,600&display=swap");
