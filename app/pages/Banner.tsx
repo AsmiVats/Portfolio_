@@ -10,7 +10,7 @@ export default function Banner() {
   const svgWidth = 820;
 
   useAnimationFrame((_, delta) => {
-    let moveBy = (delta / 1000) * 100; 
+    const moveBy = (delta / 1000) * 100; 
     setBaseX((prevBaseX) => (prevBaseX - moveBy) % (svgWidth * -4)); 
   });
 
